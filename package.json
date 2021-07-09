@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "jest"},
+    "test": "jest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Clayton-Andersen/code-crusher-team-generator.git"
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/Clayton-Andersen/code-crusher-team-generator#readme",
   "dependencies": {
+    "inquirer": "^8.1.1",
     "jest": "^27.0.6"
   }
 }
