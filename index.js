@@ -2,6 +2,8 @@ const inquirer = require('inquirer');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
+const html = require('./htmlGenerator');
+const fs = require('fs');
 
 const inputs = []
 
@@ -46,7 +48,7 @@ const additionalEmployees = () => {
         } else if (response.employeeType==='Intern') {
             internPrompts();
         } else {
-            console.log(inputs)
+            fs.writeFileSync('index.html',html(inputs) )
         }
     })
 }
